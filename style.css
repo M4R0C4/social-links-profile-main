@@ -1,0 +1,153 @@
+:root {
+  --grey-900: #141414;
+  --grey-800: #1f1f1f;
+  --grey-700: #333333;
+  --green: #c4f82a;
+  --white: #fff;
+  --font-family: "Inter", serif;
+  --text-preset-1-bold: ;
+}
+
+* {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  height: 960px;
+  padding: 8px;
+  background-color: var(--grey-900);
+  font-family: var(--font-family);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 384px;
+  height: 611px;
+  gap: 24px;
+  background-color: var(--grey-800);
+  padding: 40px;
+  border-radius: 12px;
+}
+main img {
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 100px;
+}
+.name__location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 304px;
+  height: 61px;
+}
+/* Para estilizar o h1 dentro da div com classe name__location */
+.name__location h1 {
+  font-size: 24px;
+  color: var(--white);
+}
+
+/* Para estilizar o p dentro da div com classe name__location */
+.name__location address {
+  font-size: 14px;
+  color: var(--green);
+}
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 304px;
+  height: 21px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--white);
+}
+#social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 304px;
+  height: 289px;
+  gap: 16px;
+}
+ul {
+  width: 304px;
+  height: 61px;
+  gap: 16px;
+  color: var(--white);
+}
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 304px;
+  height: 45px;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: var(--grey-700);
+  gap: 8px;
+}
+li:hover {
+  background-color: var(--green);
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+a:hover {
+  color: var(--grey-900);
+}
+@media (min-width: 1440px) {
+  body {
+    width: 1440px;
+    height: 1024px;
+  }
+  main {
+    width: 384px;
+    height: 611px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 768px;
+    height: 1024px;
+  }
+  main {
+    width: 456px;
+    height: 611px;
+  }
+}
+@media (min-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 375px;
+    height: 812px;
+  }
+  main {
+    width: 327px;
+    height: 579px;
+  }
+}
